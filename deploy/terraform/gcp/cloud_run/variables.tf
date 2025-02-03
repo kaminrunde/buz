@@ -28,11 +28,7 @@ variable "buz_domain" {
 variable "buz_version" {
   description = "The version of Buz to run."
   type        = string
-<<<<<<< HEAD
-  default     = "v0.18.2"
-=======
   default     = "v0.19.0"
->>>>>>> daa3a8032ef9460568d1e88a3c6585ff5928e786
 }
 
 variable "buz_service_timeout_seconds" {
