@@ -28,7 +28,11 @@ variable "buz_domain" {
 variable "buz_version" {
   description = "The version of Buz to run."
   type        = string
+<<<<<<< HEAD
   default     = "v0.18.2"
+=======
+  default     = "v0.19.0"
+>>>>>>> daa3a8032ef9460568d1e88a3c6585ff5928e786
 }
 
 variable "buz_service_timeout_seconds" {
@@ -53,6 +57,12 @@ variable "buz_service_memory_limit" {
   description = "The service memory limit"
   type        = string
   default     = "512Mi" # Cloud Run default
+}
+
+variable "buz_service_gomemlimit_pct" {
+  description = "Percentage of the cloud run memory limit to specify in GOMEMLIMIT env variable."
+  type        = number
+  default     = 0.9
 }
 
 variable "buz_service_container_port" {

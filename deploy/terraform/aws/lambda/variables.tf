@@ -41,13 +41,23 @@ variable "buz_image_repo" {
 variable "buz_version" {
   description = "The version of Buz to run."
   type        = string
+<<<<<<< HEAD
   default     = "v0.18.2"
+=======
+  default     = "v0.19.0"
+>>>>>>> daa3a8032ef9460568d1e88a3c6585ff5928e786
 }
 
 variable "buz_lambda_memory_limit" {
   description = "The lambda memory limit"
   type        = number
   default     = 128
+}
+
+variable "buz_lambda_gomemlimit_pct" {
+  description = "Percentage of the lambda memory limit to specify in GOMEMLIMIT env variable."
+  type        = number
+  default     = 0.9
 }
 
 variable "buz_lambda_timeout" {
